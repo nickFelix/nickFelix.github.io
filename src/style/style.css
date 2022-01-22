@@ -106,7 +106,7 @@ h2 {
   font-size: 35px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .logo-inner svg {
     height: 230px;
     width: 230px;
