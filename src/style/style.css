@@ -105,3 +105,14 @@ h2 {
   color: #fff;
   font-size: 35px;
 }
+
+@media (max-width: 600px) {
+  .logo-inner svg {
+    height: 230px;
+    width: 230px;
+  }
+
+  .logo-wrapper {
+    bottom: 60px
+  }
+}
