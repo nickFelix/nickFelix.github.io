@@ -20,15 +20,41 @@ body {
 }
 .logo-wrapper {
   position: relative;
+  border-radius: 100%;
+  width: 305px;
+  height: 305px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  transform-style: preserve-3d;
+}
+
+.logo-wrapper::before {
+  content: '';
+  position: absolute;
+  border: 2px dashed #eee;
+  transform: translateZ(-25px) scale(1.2);
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+.logo-wrapper:hover {
+  box-shadow: rgb(0 0 0 / 25%) 1px 5px 40px 2px;
 }
 
 .logo-inner {
   background-color: #fff;
   border-radius: 100%;
+  padding: 50px;
+  transform: translateZ(30px);
 }
 
 .N-logo {
-  height: 250px;
+  height: 200px;
+  width: 200px;
 }
 
 .square {
