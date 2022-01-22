@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: linear-gradient(135deg, #0099f7, #f11712);
+  color: #fff;
+  font-family: "effra", "Helvetica", sans-serif;
+}
+
+.page-inner {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: url(../img/bg-pattern.png),
+    linear-gradient(to left, rgba(247, 247, 247, 0.1), #222222);
+  height: 100vh;
+}
+.logo-wrapper {
+  position: relative;
+}
+
+.logo-inner {
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.N-logo {
+  height: 250px;
+}
+
+.square {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #ffffff 100%, #ffffff 100%),
+    linear-gradient(to bottom, #ffffff 100%, #ffffff 100%),
+    linear-gradient(to right, #ffffff 100%, #ffffff 100%),
+    linear-gradient(to bottom, #ffffff 100%, #ffffff 100%);
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 0.2s cubic-bezier(0.19, 1, 0.22, 1) 1;
+}
+
+.square:nth-child(2n) {
+  height: 90%;
+  width: 90%;
+  top: 5%;
+  right: 5%;
+}
+
+.square:nth-child(3n) {
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  right: 10%;
+}
+
+@keyframes bg {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  25% {
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+  }
+  50% {
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+  }
+  75% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+  }
+  100% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  }
+}
+
+.personal-info {
+  position: absolute;
+  bottom: 3vh;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.personal-info h1,
+h2 {
+  font-weight: 100;
+}
+
+.personal-info h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.17em;
+  margin: 7px;
+}
+.links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.links i {
+  color: #fff;
+  font-size: 35px;
+}
